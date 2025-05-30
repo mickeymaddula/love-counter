@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coitus Counter - Love Edition</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Firebase App (the core Firebase SDK) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <!-- Firebase Realtime Database -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <script>
+    // TODO: Replace the following with your app's Firebase project configuration
+    // See: https://firebase.google.com/docs/web/learn-more#config-object
+    const firebaseConfig = {
+  apiKey: "AIzaSyBpt2snG0YyMf7ymcjycBhz5tmckqy5X9M",
+  authDomain: "coitus-counter-bcafd.firebaseapp.com",
+  databaseURL: "https://coitus-counter-bcafd-default-rtdb.firebaseio.com",
+  projectId: "coitus-counter-bcafd",
+  storageBucket: "coitus-counter-bcafd.firebasestorage.app",
+  messagingSenderId: "107033654230",
+  appId: "1:107033654230:web:13437c96127a2db516aa77"
+};
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>💖 Coitus Counter 💋</h1>
+      <p class="subtitle">Counting our love until Christmas 2025</p>
+    </header>
+    <main>
+      <div class="counter-card">
+        <div class="love-icons">💏 ❤️ 🛏️</div>
+        <div class="count-display" id="count">0</div>
+        <div class="button-row">
+          <button id="increment">+</button>
+        </div>
+        <div class="days-remaining" id="days"></div>
+      </div>
+      <div class="disclaimer">
+        <p>$10/plugin. Only for us two..</p>
+      </div>
+    </main>
+    <footer>
+      <p>Made with ❤️ for MiBu</p>
+      <sub>©️ MiBu 2025</sub>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
