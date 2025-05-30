@@ -1,5 +1,5 @@
 // script.js
-// Firebase-based Coitus Counter
+// Love Counter Logic
 
 const countEl = document.getElementById('count');
 const daysEl = document.getElementById('days');
